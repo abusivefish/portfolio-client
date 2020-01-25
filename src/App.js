@@ -1,7 +1,10 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-//global header
+class NavDropdown {
+  
+}
 
 function App() {
   return (
@@ -15,29 +18,34 @@ function App() {
             id="gh-ref"
         />
         </a>
-          <div className="dropdown">
-            My Projects
-          </div>
-          <img
-
-          />
-        
+          
+          <ul className="dropdown">
+            
+          </ul>
+      
       </header>
     
-      <div className="carousel">
-        <div className="btn">
+      <div className="main-window">
+        <div className="">
+          
         </div>
       </div>
 
-      <footer>
+      <footer className="footer">
         
       </footer>
     </div>
   );
 }
 
+/* function selectNav() {
+  var options=""
+  for (var i = 0; i <= 7; i++) {
+    options += "<option>" + i + "</option>";  
+  }
+  return options
+}
 
-/*
 function InvertColor() {
   do thing
 }
