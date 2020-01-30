@@ -1,34 +1,20 @@
 import React from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import './views/portfolio.js'
 
-class NavDropdown {
-  
-}
 
 function App() {
+//  var mainWindow = 
+var navbar = Header()
+  
   return (
     <div className="App">
-      <header className="navbar">
-        <a href="https://github.com/abusivefish">
-        <img 
-            className="GH" 
-            alt="" 
-            src="./GitHub-Mark-32px.png" 
-            id="gh-ref"
-        />
-        </a>
-          
-          <ul className="dropdown">
-            
-          </ul>
-      
-      </header>
     
+    <nav>{navbar}</nav>
+
       <div className="main-window">
-        <div className="">
-          
-        </div>
+        
       </div>
 
       <footer className="footer">
@@ -36,29 +22,33 @@ function App() {
       </footer>
     </div>
   );
+};
+
+function Header() {
+  return (
+    <header className="navbar">
+        <a href="https://github.com/abusivefish" target="_blank">
+        <img 
+            className="GH" 
+            alt="" 
+            src="./GitHub-Mark-32px.png" 
+            id="gh-ref"
+            />
+        </a>
+      </header>
+  );
 }
 
-/* function selectNav() {
-  var options=""
-  for (var i = 0; i <= 7; i++) {
-    options += "<option>" + i + "</option>";  
-  }
-  return options
-}
+function router() {
+  var props = [1, 2, 3];
+  var first = props[0];
 
-function InvertColor() {
-  do thing
-}
-
-
-Old Brick 	#912133 	Primary
-Baltic Sea 	#232127 	Info
-Dingley 	#618447 	Success
-Christine 	#de740f 	Warning
-Pomegranate 	#f44336 	Danger
-
-
-*/
+  return (
+    <ul className="dropdown">
+        <li>props.children</li>
+    </ul>
+  );
+} 
 
 
 export default App;
