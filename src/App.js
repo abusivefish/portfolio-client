@@ -6,7 +6,7 @@ import './views/portfolio.js'
 
 function App() {
 //  var mainWindow = 
-var navbar = Header()
+  var navbar = Header()
   
   return (
     <div className="App">
@@ -25,6 +25,8 @@ var navbar = Header()
 };
 
 function Header() {
+  var navmenu = router()
+  
   return (
     <header className="navbar">
         <a href="https://github.com/abusivefish" target="_blank">
@@ -35,6 +37,9 @@ function Header() {
             id="gh-ref"
             />
         </a>
+        
+        <div>{navmenu}</div>
+        
       </header>
   );
 }
@@ -44,9 +49,9 @@ function router() {
   var first = props[0];
 
   return (
-    <ul className="dropdown">
-        <li>props.children</li>
-    </ul>
+    <div className="dropdown">
+        <option></option>
+    </div>
   );
 } 
 
