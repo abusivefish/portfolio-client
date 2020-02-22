@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './assets/css/App.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import './views/portfolio.js'
 
