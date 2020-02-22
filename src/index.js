@@ -4,23 +4,24 @@ import './assets/css/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-export function Header(props) {
+export default function Header() {
     return (
-      <header className="navbar">
-         
+        <header className="navbar">
+            
         </header>
     );
   }
   
-  function social_modal(props) {
+  function social_modal() {
     let socials = {
-        ["GH": "https://github.com/abusivefish","LI": "https://linkedin.com/in/connor-law"]
+        "GH": "https://github.com/abusivefish",
+        "LI": "https://linkedin.com/in/connor-law"
     };
     
     return( 
         <a href="https://github.com/abusivefish" target="_blank" rel="noopener noreferrer">
         <img 
-            className="GH" 
+            className="socials" 
             alt="" 
             src="./GitHub-Mark-32px.png" 
             id="gh-ref"
@@ -29,13 +30,12 @@ export function Header(props) {
     );
   }
 
-  function Router() {
+  function router() {
     var props = [1, 2, 3];
-    var first = props[0];
-  
+    
     return (
       <div className="dropdown">
-          <option></option>
+          <option>{}</option>
       </div>
     );
   } 
